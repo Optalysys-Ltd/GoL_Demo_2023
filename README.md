@@ -11,12 +11,16 @@ cmake ..
 make -j $(nproc)
 ```
 
-The Game of Life demo can than be run *via*:
+The Game of Life demo can than be run with or without optical simulator *via*:
 ```
 ./build/bin/examples/pke/Conway_CKKS_2
+```
+or 
+```
+./build/bin/optalysys/Conway_CKKS_2_opt
 ```
 
 A file with a starting configuration may be provided as argument, *e.g.*:
 ```
-./build/bin/examples/pke/Conway_CKKS_2 example_starting_position.txt
+./build/bin/optalysys/Conway_CKKS_2_opt example_starting_position.txt
 ```
