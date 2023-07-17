@@ -8,7 +8,7 @@ The project can be run using CMake:
 mkdir -p build
 cd build
 cmake ..
-cmake --build . -j $(nproc)
+make -j $(nproc)
 ```
 
 The Game of Life demo can than be run *via*:
