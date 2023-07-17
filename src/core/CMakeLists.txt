@@ -101,7 +101,7 @@ if ( BUILD_EXAMPLES )
 	endforeach()
 
 	add_custom_target( allcoreexamples )
-	add_dependencies( allcoreexamples ${COREAPPS} )
+	#add_dependencies( allcoreexamples ${COREAPPS} )
 	add_dependencies( allcore allcoreexamples )
 endif()
 

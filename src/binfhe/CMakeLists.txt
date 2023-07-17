@@ -82,7 +82,7 @@ if( BUILD_EXAMPLES)
 	endforeach()
 
 	add_custom_target( allbinfheexamples )
-	add_dependencies( allbinfheexamples ${BINFHEAPPS} )
+#	add_dependencies( allbinfheexamples ${BINFHEAPPS} )
 	add_dependencies( allbinfhe allbinfheexamples)
 endif()
 
