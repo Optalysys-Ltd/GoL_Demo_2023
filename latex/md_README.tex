@@ -1,0 +1,109 @@
+{\bfseries{This is a work in progress fork of \href{https://github.com/openfheorg/openfhe-development}{\texttt{ Open\+FHE}}, used to test different approacheds to integrating the Optalysys technology.}}
+
+Open\+FHE -\/ Open-\/\+Source Fully Homomorphic Encryption Library
+
+Fully Homomorphic Encryption (FHE) is a powerful cryptographic primitive that enables performing computations over encrypted data without having access to the secret key. Open\+FHE is an open-\/source FHE library that includes efficient implementations of all common FHE schemes\+:
+\begin{DoxyItemize}
+\item Brakerski/\+Fan-\/\+Vercauteren (BFV) scheme for integer arithmetic
+\item Brakerski-\/\+Gentry-\/\+Vaikuntanathan (BGV) scheme for integer arithmetic
+\item Cheon-\/\+Kim-\/\+Kim-\/\+Song (CKKS) scheme for real-\/number arithmetic (includes approximate bootstrapping)
+\item Ducas-\/\+Micciancio (DM) and Chillotti-\/\+Gama-\/\+Georgieva-\/\+Izabachene (CGGI) schemes for Boolean circuit evaluation
+\end{DoxyItemize}
+
+Open\+FHE also includes the following multiparty extensions of FHE\+:
+\begin{DoxyItemize}
+\item Threshold FHE for BGV, BFV, and CKKS schemes
+\item Proxy Re-\/\+Encryption for BGV, BFV, and CKKS schemes
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md0}{}\doxysubsection{Links and Resources}\label{md_README_autotoc_md0}
+
+\begin{DoxyItemize}
+\item \href{https://openfhe-development.readthedocs.io/en/latest/}{\texttt{ Open\+FHE documentation}}
+\item \href{https://eprint.iacr.org/2022/915}{\texttt{ Design paper for Open\+FHE}}
+\item \href{https://openfhe.org}{\texttt{ Open\+FHE website}}
+\item \href{https://openfhe.discourse.group/}{\texttt{ Community forum for Open\+FHE}}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/docs/static_docs/Release_Notes.md}{\texttt{ Open\+FHE Release Notes}}
+\item \href{https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/intro/quickstart.html}{\texttt{ Quickstart}}
+\item \mbox{[}BSD 2-\/Clause License\mbox{]}(LICENSE)
+\item \href{https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/contributing/contributing.html}{\texttt{ Contributing to Open\+FHE}}
+\item \href{https://github.com/openfheorg/openfhe-development/issues}{\texttt{ Openfhe-\/development Github Issues}}
+\item To report security vulnerabilities, please email us at \href{mailto:contact@openfhe.org}{\texttt{ contact@openfhe.\+org}}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md1}{}\doxysubsection{Installation}\label{md_README_autotoc_md1}
+Refer to our General Installation Information\+: \href{https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/intro/installation/installation.html}{\texttt{ readthedocs}} for more information
+
+Or refer to the following for your specific operating system\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/intro/installation/linux.html}{\texttt{ Linux}}
+\item \href{https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/intro/installation/macos.html}{\texttt{ Mac\+OS}}
+\item \href{https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/intro/installation/windows.html}{\texttt{ Windows}}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md2}{}\doxysubsection{Code Examples}\label{md_README_autotoc_md2}
+To get familiar with the main API of Open\+FHE, we recommend looking at the code of the following examples\+:
+\begin{DoxyEnumerate}
+\item FHE for arithmetic over integers (BFV)\+:
+\begin{DoxyEnumerate}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/simple-integers.cpp}{\texttt{ Simple Code Example}}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/simple-integers-serial.cpp}{\texttt{ Simple Code Example with Serialization}}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item FHE for arithmetic over integers (BGV)\+:
+\begin{DoxyEnumerate}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/simple-integers-bgvrns.cpp}{\texttt{ Simple Code Example}}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/simple-integers-serial-bgvrns.cpp}{\texttt{ Simple Code Example with Serialization}}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item FHE for arithmetic over real numbers (CKKS)\+:
+\begin{DoxyEnumerate}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/simple-real-numbers.cpp}{\texttt{ Simple Code Example}}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/advanced-real-numbers.cpp}{\texttt{ Advanced Code Example}}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/advanced-real-numbers-128.cpp}{\texttt{ Advanced Code Example for High-\/\+Precision CKKS}}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/simple-ckks-bootstrapping.cpp}{\texttt{ Simple CKKS Bootstrapping Example}}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/advanced-ckks-bootstrapping.cpp}{\texttt{ Advanced CKKS Bootstrapping Example}}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item FHE for Boolean circuits (FHEW/\+TFHE)\+:
+\begin{DoxyEnumerate}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/binfhe/examples/boolean.cpp}{\texttt{ Simple Code Example}}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/binfhe/examples/boolean-serial-json.cpp}{\texttt{ Code with JSON serialization}}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/binfhe/examples/boolean-serial-binary.cpp}{\texttt{ Code with Binary Serialization}}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Threshold FHE\+:
+\begin{DoxyEnumerate}
+\item \href{https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/threshold-fhe.cpp}{\texttt{ Code Example for BGV, BFV, and CKKS}}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md3}{}\doxysubsection{Code of Conduct}\label{md_README_autotoc_md3}
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-\/free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-\/economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+
+Open\+FHE is a community-\/driven open source project developed by a diverse group of \href{https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/misc/contributors.html}{\texttt{ contributors}}. The Open\+FHE leadership has made a strong commitment to creating an open, inclusive, and positive community. Please read our \href{https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/misc/code_of_conduct.html?highlight=code\%20of\%20}{\texttt{ Code of Conduct}} for guidance on how to interact with others in a way that makes our community thrive.\hypertarget{md_README_autotoc_md4}{}\doxysubsection{Call for Contributions}\label{md_README_autotoc_md4}
+We welcome all contributions including but not limited to\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/openfheorg/openfhe-development/issues}{\texttt{ reporting issues}}
+\item addressing \href{https://github.com/openfheorg/openfhe-development/issues}{\texttt{ bugs}} big or small. We label issues to help you filter them to your skill level.
+\item documentation changes
+\item talks and seminars using Open\+FHE
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md5}{}\doxysubsection{How to Cite Open\+FHE}\label{md_README_autotoc_md5}
+To cite Open\+FHE in academic papers, please use the following Bib\+TeX entry.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@misc\{OpenFHE,}
+\DoxyCodeLine{      author = \{Ahmad Al Badawi and Jack Bates and Flavio Bergamaschi and David Bruce Cousins and Saroja Erabelli and Nicholas Genise and Shai Halevi and Hamish Hunt and Andrey Kim and Yongwoo Lee and Zeyu Liu and Daniele Micciancio and Ian Quah and Yuriy Polyakov and Saraswathy R.V. and Kurt Rohloff and Jonathan Saylor and Dmitriy Suponitsky and Matthew Triplett and Vinod Vaikuntanathan and Vincent Zucca\},}
+\DoxyCodeLine{      title = \{OpenFHE: Open-\/Source Fully Homomorphic Encryption Library\},}
+\DoxyCodeLine{      howpublished = \{Cryptology ePrint Archive, Paper 2022/915\},}
+\DoxyCodeLine{      year = \{2022\},}
+\DoxyCodeLine{      note = \{\(\backslash\)url\{https://eprint.iacr.org/2022/915\}\},}
+\DoxyCodeLine{      url = \{https://eprint.iacr.org/2022/915\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md6}{}\doxysubsection{Acknowledgments}\label{md_README_autotoc_md6}
+This work is supported in part by DARPA through HR0011-\/21-\/9-\/0003 and HR0011-\/20-\/9-\/0102. The views, opinions, and/or findings expressed are those of the author(s) and should not be interpreted as representing the official views or policies of the Department of Defense or the U.\+S. Government. 
