@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/liboptalysys_interface.a CMakeFiles/optalysys_interface.dir/lib/dftransform.cpp.o CMakeFiles/optalysys_interface.dir/lib/intnat-optalysys/mubintvecnat.cpp.o CMakeFiles/optalysys_interface.dir/lib/intnat-optalysys/ubintnat.cpp.o
+/usr/bin/ranlib ../../../lib/liboptalysys_interface.a

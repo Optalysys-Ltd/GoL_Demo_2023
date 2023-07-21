@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/florent/GoL_Demo_2023/third-party/optalysys/interface/examples/Password_Check_BFV.cpp
+iostream
+-
+vector
+-
+string
+-
+

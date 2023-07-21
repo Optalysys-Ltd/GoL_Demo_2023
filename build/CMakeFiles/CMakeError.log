@@ -1,0 +1,48 @@
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 failed with the following output:
+Change Dir: /home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_07037/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_07037.dir/build.make CMakeFiles/cmTC_07037.dir/build
+gmake[1]: Entering directory '/home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_07037.dir/src.cxx.o
+/usr/bin/c++   -Wall -Werror -O3  -DOPENFHE_VERSION=1.0.1 -Wno-parentheses -DMATHBACKEND=4 -fopenmp  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wshorten-64-to-32   -Wshorten-64-to-32 -o CMakeFiles/cmTC_07037.dir/src.cxx.o -c /home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+gmake[1]: *** [CMakeFiles/cmTC_07037.dir/build.make:85: CMakeFiles/cmTC_07037.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:140: cmTC_07037/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WD654 failed with the following output:
+Change Dir: /home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_e4e51/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e4e51.dir/build.make CMakeFiles/cmTC_e4e51.dir/build
+gmake[1]: Entering directory '/home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e4e51.dir/src.cxx.o
+/usr/bin/c++   -Wall -Werror -O3  -DOPENFHE_VERSION=1.0.1 -Wno-parentheses -DMATHBACKEND=4 -fopenmp  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -DHAVE_CXX_FLAG_WD654  -wd654   -wd654 -o CMakeFiles/cmTC_e4e51.dir/src.cxx.o -c /home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-wd654'
+c++: error: unrecognized command-line option '-wd654'
+gmake[1]: *** [CMakeFiles/cmTC_e4e51.dir/build.make:85: CMakeFiles/cmTC_e4e51.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:140: cmTC_e4e51/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WTHREAD_SAFETY failed with the following output:
+Change Dir: /home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5062a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5062a.dir/build.make CMakeFiles/cmTC_5062a.dir/build
+gmake[1]: Entering directory '/home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5062a.dir/src.cxx.o
+/usr/bin/c++   -Wall -Werror -O3  -DOPENFHE_VERSION=1.0.1 -Wno-parentheses -DMATHBACKEND=4 -fopenmp  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wthread-safety   -Wthread-safety -o CMakeFiles/cmTC_5062a.dir/src.cxx.o -c /home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wthread-safety'
+c++: error: unrecognized command-line option '-Wthread-safety'
+gmake[1]: *** [CMakeFiles/cmTC_5062a.dir/build.make:85: CMakeFiles/cmTC_5062a.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/florent/GoL_Demo_2023/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:140: cmTC_5062a/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
