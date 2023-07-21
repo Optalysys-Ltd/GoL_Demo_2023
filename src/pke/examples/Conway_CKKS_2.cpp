@@ -164,7 +164,7 @@ int main(int argc, char* argv[]) {
     
     for (unsigned int step = 0; step < nSteps; step++) {
 
-        std::cout << "\nBoard state:" << std::endl;
+        std::cout << "\x1B[2J\x1B[HBoard state:" << std::endl;
         for (unsigned int i = 0; i < board_state.size() / rowLength; i++) {
             for (unsigned int j = 0; j < rowLength; j++) {
                 std::cout << (board_state[i*rowLength+j] == 1. ? "■ " : "· ");

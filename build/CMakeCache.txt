@@ -633,7 +633,7 @@ COMPILE_HAVE_POSIX_REGEX:INTERNAL=TRUE
 COMPILE_HAVE_STD_REGEX:INTERNAL=TRUE
 //Result of TRY_COMPILE
 COMPILE_HAVE_STEADY_CLOCK:INTERNAL=TRUE
-CORE_INCLUDE_DIRS:INTERNAL=/home/florent/GoL_Demo_2023/src/core/include;/home/florent/GoL_Demo_2023/src/core/lib;/home/florent/GoL_Demo_2023/src/core/include;/home/florent/GoL_Demo_2023/src/core/lib;/home/florent/GoL_Demo_2023/src/core/include;/home/florent/GoL_Demo_2023/src/core/lib
+CORE_INCLUDE_DIRS:INTERNAL=/home/florent/GoL_Demo_2023/src/core/include;/home/florent/GoL_Demo_2023/src/core/lib;/home/florent/GoL_Demo_2023/src/core/include;/home/florent/GoL_Demo_2023/src/core/lib;/home/florent/GoL_Demo_2023/src/core/include;/home/florent/GoL_Demo_2023/src/core/lib;/home/florent/GoL_Demo_2023/src/core/include;/home/florent/GoL_Demo_2023/src/core/lib
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.34.1()]
 //Details about finding OpenMP
@@ -692,7 +692,7 @@ HAVE_SYS_TYPES_H:INTERNAL=1
 INT128:INTERNAL=16
 //CHECK_TYPE_SIZE: sizeof(uint64_t)
 INT64:INTERNAL=8
-OPTALYSYS_INTERFACE_INCLUDE_DIRS:INTERNAL=/home/florent/GoL_Demo_2023/third-party/optalysys/interface/include;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/lib;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/include;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/lib;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/include;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/lib
+OPTALYSYS_INTERFACE_INCLUDE_DIRS:INTERNAL=/home/florent/GoL_Demo_2023/third-party/optalysys/interface/include;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/lib;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/include;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/lib;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/include;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/lib;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/include;/home/florent/GoL_Demo_2023/third-party/optalysys/interface/lib
 //Result of TRY_COMPILE
 OpenMP_COMPILE_RESULT_CXX_fopenmp:INTERNAL=TRUE
 //Result of TRY_COMPILE

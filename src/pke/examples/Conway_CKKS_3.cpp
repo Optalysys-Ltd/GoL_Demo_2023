@@ -198,7 +198,7 @@ int main(int argc, char* argv[]) {
     }
         
     // encrypt the board state 
-    std::cout << "\nEncrypt the board state" << std::endl;
+    std::cout << "\x1B[2J\x1B[H\nEncrypt the board state" << std::endl;
     Plaintext p = cc->MakeCKKSPackedPlaintext(board_state);
     auto enc_board = cc->Encrypt(keys.publicKey, p);
     std::cout << "Board state encrypted" << std::endl;
